@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M. Ghassan — Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo">ghassan.dev</a>
+        <ul class="nav-links">
+          <li><a href="#about">tentang</a></li>
+          <li><a href="#skill">skill</a></li>
+          <li><a href="#project">project</a></li>
+          <li><a href="#certification">sertifikasi</a></li>
+          <li><a href="#contact">kontak</a></li>
+          <li><a href="osint-lab.html" class="nav-cta">[ akses lab ]</a></li>
+        </ul>
+        <button class="humburger" id="humburger" aria-label="menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="mobile-nav" id="mobileNav">
+        <a href="#about">tentang</a>
+        <a href="#skill">skill</a>
+        <a href="#project">project</a>
+        <a href="#certification">sertifikat</a>
+        <a href="#contact">kontak</a>
+        #<a href="osint-lab.html" style="color: var(--green)">[ akses lab ]</a>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <div class="hero-status">Available for projects</div>
+            <h1 class="hero-name">
+              Halo, Saya<br />
+              <span id="heroName" class="accent">M. Ghassan</span>
+            </h1>
+            <p class="hero-subtitle">
+              Seorang <strong><em>beginner</em></strong> yang berfokus belajar
+              <em style="color: var(--cyan); font-style: normal"
+                >Web Development</em
+              >
+              sebagai fondasi untuk mendalami dunia
+              <em style="color: var(--cyan); font-style: normal"
+                >Cyber Security</em
+              >.
+            </p>
+            <div class="hero-tags">
+              <span class="tag">HTML / CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Python</span>
+              <span class="tag">Cyber Security (learning)</span>
+            </div>
+            <div class="hero-btns">
+              <a href="#project" class="btn-primary">Lihat Proyek</a>
+              <a href="osint-lab.html" class="btn-secondary"
+                >&gt;_ Buka OSINT Lab</a
+              >
+            </div>
+          </div>
+          <div class="hero-img-wrap">
+            <img src="fotoalbom/san.png" alt="M. Ghassan" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="section-label">tentang saya</div>
+        <h2 class="section-title">Siapa Saya?</h2>
+        <div class="about-grid">
+          <div>
+            <p class="about-text" style="margin-bottom: 1rem">
+              Saya adalah <em>beginner</em> yang memiliki ketertarikan besar
+              terhadap <em>Web Development</em>. Saat ini sedang aktif
+              mempelajari fundamental HTML, CSS, dan JavaScript agar menjadi
+              landasan kuat untuk memahami dunia <em>Cyber Security</em> lebih
+              dalam.
+            </p>
+            <p class="about-text">
+              Saya percaya bahwa memahami cara kerja web dari sisi
+              <em>developer</em> adalah kunci untuk bisa menganalisis dan
+              mengamankannya sebagai seorang <em>security professional</em> di
+              masa depan.
+            </p>
+          </div>
+          <div class="stat-grid">
+            <div class="stat-card">
+              <div class="stat-num">3+</div>
+              <div class="stat-label">Proyek Selesai</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">2+</div>
+              <div class="stat-label">Bahasa Pemrograman</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">1</div>
+              <div class="stat-label">Tahun Belajar</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">∞</div>
+              <div class="stat-label">Rasa Penasaran</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skill -->
+    <section id="skill">
+      <div class="container">
+        <div class="section-label">kemampuan</div>
+        <h2 class="section-title">Skill Saya</h2>
+        <div class="skills-grid">
+          <div class="card">
+            <div class="skill-card-title">Hard Skill</div>
+            <ul id="hard-skill-container" style="list-style: none; padding: 0">
+              <li class="skill-item">
+                <span class="skill-dot"></span>HTML & CSS
+              </li>
+              <li class="skill-item">
+                <span class="skill-dot"></span>JavaScript (DOM)
+              </li>
+              <li class="skill-item"><span class="skill-dot"></span>Python</li>
+              <li class="skill-item">
+                <span class="skill-dot"></span>Adobe Premiere Pro
+              </li>
+              <li class="skill-item">
+                <span class="skill-dot"></span>Linux (Basic CLI)
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <div
+              class="skill-card-title"
+              style="color: var(--cyan); --green: var(--cyan)"
+            >
+              Soft Skill
+            </div>
+            <ol
+              id="soft-skill-container"
+              style="list-style: none; padding: 0; counter-reset: soft"
+            >
+              <li class="skill-item" style="--dot-color: var(--cyan)">
+                <span class="skill-dot" style="background: var(--cyan)"></span
+                >Communication
+              </li>
+              <li class="skill-item">
+                <span class="skill-dot" style="background: var(--cyan)"></span
+                >Team Work
+              </li>
+              <li class="skill-item">
+                <span class="skill-dot" style="background: var(--cyan)"></span
+                >Fast Learner
+              </li>
+              <li class="skill-item">
+                <span class="skill-dot" style="background: var(--cyan)"></span
+                >Problem Solving
+              </li>
+              <li class="skill-item">
+                <span class="skill-dot" style="background: var(--cyan)"></span
+                >Strategic Napping 💤
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project -->
+    <section id="project">
+      <div class="container">
+        <div class="section-label">karya</div>
+        <h2 class="section-title">Project Saya</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <img
+              src="fotoalbom/motiontrack.png"
+              alt="Project 1"
+              class="project-img"
+            />
+            <div class="project-body">
+              <div class="project-num">PROJECT_01</div>
+              <h3 class="project-title">Python Project</h3>
+              <p class="project-desc">Project 1 — Hand Gesture Tracking</p>
+              <a
+                href="https://drive.google.com/file/d/16Thq8wHIqhRua63rVe49f01RLx3YLC1r/view?usp=sharing"
+                target="_blank"
+                class="project-link"
+                >→ lihat_disini()</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <img
+              src="fotoalbom/evote.png"
+              alt="Project 2"
+              class="project-img"
+            />
+            <div class="project-body">
+              <div class="project-num">PROJECT_02</div>
+              <h3 class="project-title">Website Project</h3>
+              <p class="project-desc">Proyek 2 — Website E-Voting.</p>
+              <a
+                href="https://voting-app06.pages.dev/"
+                target="_blank"
+                class="project-link"
+                >→ lihat_disini()</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certification -->
+    <section id="certification">
+      <div class="container">
+        <div class="section-label">pencapaian</div>
+        <h2 class="section-title">Sertifikasi & Progress</h2>
+        <div class="cert-grid">
+          <div class="cert-card">
+            <div class="cert-icon">[data]</div>
+            <div class="cert-title">
+              Penerapan Data Science Dengan Microsoft Fabric
+            </div>
+            <div class="cert-issuer">Dicoding Academy</div>
+            <span class="cert-badge">completed</span>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">[ai]</div>
+            <div class="cert-title">Overview of AI</div>
+            <div class="cert-issuer">Huawei ICT Academy</div>
+            <span class="cert-badge">completed</span>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">[cyber]</div>
+            <div class="cert-title">Introduction of Cybersecurity</div>
+            <div class="cert-issuer">Cisco Networking Academy</div>
+            <span class="cert-badge">completed</span>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">[sec]</div>
+            <div class="cert-title">Learn Cyber Security</div>
+            <div class="cert-issuer">TryHackMe</div>
+            <span
+              class="cert-badge"
+              style="
+                color: var(--green);
+                background: rgba(0, 255, 157, 0.07);
+                border-color: rgba(0, 255, 157, 0.2);
+              "
+              >in progress</span
+            >
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">[net]</div>
+            <div class="cert-title">Networking Basics</div>
+            <div class="cert-issuer">Cisco Networking Academy</div>
+            <span
+              class="cert-badge"
+              style="
+                color: var(--green);
+                background: rgba(0, 255, 157, 0.07);
+                border-color: rgba(0, 255, 157, 0.2);
+              "
+              >in progress</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-label">hubungi</div>
+        <h2 class="section-title">Kontak Saya</h2>
+        <div class="contact-layout">
+          <div>
+            <p class="contact-info-title">Mari Terhubung</p>
+            <p class="contact-info-text">
+              Terbuka untuk kolaborasi, project, atau sekadar ngobrol soal web
+              dev dan cyber security. Jangan ragu untuk menghubungi!
+            </p>
+            <div class="contact-social">
+              <a href="#">github.com/ssannmygithb</a>
+              <a href="#"
+                >linkedin.com/in/muhammad-ghassan-dzul-hannan-939574368</a
+              >
+              <a href="#">ssov7697@gmail.com</a>
+            </div>
+          </div>
+          <div>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="nama" class="form-label">// nama</label>
+                <input
+                  id="nama"
+                  type="text"
+                  name="nama"
+                  placeholder="Nama lengkap kamu"
+                  class="form-input"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email-input" class="form-label">// e-mail</label>
+                <input
+                  id="email-input"
+                  type="email"
+                  name="email"
+                  placeholder="email@contoh.com"
+                  class="form-input"
+                />
+              </div>
+              <div class="form-group">
+                <label for="pesan" class="form-label">// pesan</label>
+                <textarea
+                  id="pesan"
+                  name="pesan"
+                  placeholder="Tulis pesanmu di sini..."
+                  class="form-input"
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <label for="kerjasama" class="form-label">// kategori</label>
+                <select id="kerjasama" name="kerjasama" class="form-input">
+                  <option value="" disabled selected>— pilih kategori —</option>
+                  <option value="kerjasama">Kerjasama</option>
+                  <option value="project">Project</option>
+                  <option value="bisnis">Bisnis</option>
+                  <option value="lainnya">Lainnya</option>
+                </select>
+              </div>
+              <button type="submit" class="btn-primary" style="width: 100%">
+                kirim_pesan()
+              </button>
+              <p id="formMsg"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2026 <span>M. Ghassan</span> — Built with Frontend
+          Fundamentals<br />
+          <span style="color: var(--text-dim); font-size: 0.7rem"
+            >All rights reserved.</span
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

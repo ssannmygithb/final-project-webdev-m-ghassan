@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OSINT LAB - GitHub Scanner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="osint-lab.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Bar Atas -->
+    <div class="topbar">
+      <a href="index.html" class="back-btn">kembali ke profil</a>
+      <div class="topbar-title">GITHUB_OSINT_SCANNER</div>
+      <div class="topbar-status">
+        <div class="dot-live"></div>
+        LIVE
+      </div>
+    </div>
+
+    <!-- main -->
+    <main>
+      <!-- header -->
+      <div class="page-header">
+        <div class="breadcrumb">
+          root / <span>osint-lab</span> / github-scanner
+        </div>
+        <h1 class="page-title">
+          <span class="prefix">&gt;_ </span>GITHUB OSINT SCANNER<span
+            class="cursor"
+          ></span>
+        </h1>
+        <p class="page-desc">
+          Scan profil GitHub target untuk mendapatkan informasi intelijen
+          terbuka: <span class="hl">profil</span>,
+          <span class="hl">statistik</span>, dan
+          <span class="hl">repositori terbaru</span>. Powered by GitHub Public
+          API.
+        </p>
+      </div>
+
+      <!-- scan panel -->
+      <div class="scan-panel">
+        <div class="panel-header">OSINT_MODULE :: github_user_recon.js</div>
+        <div class="panel-body">
+          <div class="input-row">
+            <input
+              id="usernameInput"
+              type="text"
+              class="scan-input"
+              placeholder="Enter target GitHub username..."
+              autocomplete="off"
+              spellcheck="false"
+            />
+            <button id="scanBtn" class="scan-btn" onclick="runScan()">
+              Execute Scan
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Loading State -->
+      <div class="loading-box" id="loadingBox">
+        <p class="loading-text loading-dots">Scanning network</p>
+      </div>
+
+      <!-- result area -->
+      <div id="resultArea"></div>
+    </main>
+
+    <div class="page-footer">
+      Data diambil secara real-time dari <span>api.github.com</span> — GitHub
+      Public API<br />
+      &copy; 2026 <span>M. Ghassan</span> — OSINT Lab
+    </div>
+
+    <script src="osint-lab.js"></script>
+  </body>
+</html>
